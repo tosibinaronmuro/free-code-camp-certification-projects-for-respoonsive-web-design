@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="survey.css">
+    <title>Survey</title>
+</head>
+<body>
+ <div class="container">
+            <div class="header" id="navbar">
+            <h1 id="title">Pet Patrol</h1>
+            <p id="description">Get your perfect pet here</p>
+            </div>
+            <div class="main">
+            <form action="" method="post" id="survey-form">
+                <label for="name " id="name-label"><p class="yel"> Name:</p> <input type="name" name="Name" id="name" required maxlength="30" minlength="3" placeholder="  enter your name" class="inpp"></label>
+                <label for="email" id="email-label"><p class="yel"> Email:</p> <input type="email" name="email-label" id="email" placeholder="  enter your email" required class="inpp"></label>
+                <label for="Age"><p class="yel">Age(optional):</p> <input type="number" name="Age" id="Age" min='5'max='99' placeholder="  how old are you?" class="inpp"></label>
+                <label for="number" id="number-label"   >how many pets do you own: <input type="number" name="number" id="number"min="0" max="10" placeholder="  pets you  own"></label>
+                <label for="pet" id="dropdownn">What type of animal would you like?
+                    <select name="pet" id="dropdown">
+                        <option value="Dog">A Dog</option>
+                        <option value="Cat">A Cat</option>
+                        <option value="">A Gold Fish</option>
+                        <option value="">A Parrot</option>
+                        <option value="">A Hamster</option>
+                        <option value="">An Elephant</option>
+                    </select>
+                </label>
+                <div class="dddd"> <p class="yell"> How excited are you to get a pet from pet patrol?</p>
+                    <label for="Extremely-Excited"><input name="excit" type="radio" value="Extremely-Excited" id="Extremely-Excited"  class="input-radio"> Extremely-Excited</label>
+                    <label for="Very-Excited"><input name="excit" type="radio" value="Very-Excited" id="Very-Excited"   class="input-radio"> Very-Excited</label>
+                    <label for="Not a big deal"><input name="excit" type="radio" value="Not a big deal" id="Not a big deal"  class="input-radio"> Not a big deal</label>
+                    <label for="i dont care"><input name="excit" type="radio" value="i dont care" id="i dont care"  class="input-radio"> i dont care</label>
+                </div>
+                <div class="dddd"> <p class="yell">What services would you like to receive from PawPatrol?</p>
+                <label for="bath"><input type="checkbox" value="bath" name="bath" id="bath"> Pet-Bath</label>
+                <label for="remind"><input type="checkbox" value="remind" name="remind" id="remind"> Daily feeding reminders via email</label>
+                <label for="stroll"><input type="checkbox" value="strol" name="stroll" id="stroll"> Pet-strolling</label>
+                <label for="feeding"><input type="checkbox" value="feeding"  name="feeding" id="feeding"> Pet-feeding</label>
+                <label for="housing"><input type="checkbox" value="housing" name="housing" id="housing"> Pet-housing</label>
+                <label for="checkup"><input type="checkbox"value="checkup"  name="checkup" id="checkup"> Checkup by our Vet</label>
+                </div><br>
+        
+                <div><p class="yelll">Any comments or suggestions?</p>
+                    <label for="questions"><textarea name="questions" id="questions" placeholder=" enter your coments here..." class="input-textarea"></textarea></label></div>
+                    <button id="submit">submit</button>
+                </div>
+                
+            </form>
+        </div>
+            <script src="survey.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </body>
+</html>
